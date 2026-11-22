@@ -8,32 +8,34 @@
       content="Featured projects by Peter Kebaso Gichana spanning energy infrastructure, financial modeling, construction, and Dupern agribusiness analytics."
     />
     <title>Projects | Peter Kebaso Gichana</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav aria-label="Primary Navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-nav" aria-label="Primary Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-    <main>
+    <main class="container page-section">
       <h1>Featured Projects &amp; Initiatives</h1>
       <p>
         Explore a selection of my technical, financial, and operational projects
         below.
       </p>
 
-      <section>
+      <section class="project-card">
+        <span class="badge">Energy &amp; Analytics</span>
         <h2>1. Kisii County Energy Analytics &amp; Solar Integration</h2>
         <img
           src="images/energy-analytics.jpg"
           alt="Solar energy installation and analytics dashboard preview"
-          width="350"
         />
         <p>
           Data-driven framework optimizing public facility energy consumption,
@@ -42,12 +44,12 @@
         </p>
       </section>
 
-      <section>
+      <section class="project-card">
+        <span class="badge">Finance &amp; Construction</span>
         <h2>2. Financial Modeling &amp; Construction Management</h2>
         <img
           src="images/construction-mgmt.jpg"
           alt="Architectural renderings and structural site development"
-          width="350"
         />
         <p>
           End-to-end management of residential and commercial structural
@@ -56,12 +58,12 @@
         </p>
       </section>
 
-      <section>
+      <section class="project-card">
+        <span class="badge">Agribusiness &amp; AI</span>
         <h2>3. Dupern Agribusiness Automation Hub</h2>
         <img
           src="images/financial-ai.jpg"
           alt="Automated data pipelines and agricultural supply chain models"
-          width="350"
         />
         <p>
           Custom analytics pipelines tracking livestock operations, inventory
@@ -70,7 +72,7 @@
       </section>
 
       <h2>Project Summary Table</h2>
-      <table border="1">
+      <table>
         <caption>
           Overview of Portfolio Projects and Core Technologies
         </caption>
@@ -105,10 +107,12 @@
       </table>
     </main>
 
-    <footer>
-      <p>
-        &copy; 2026 Peter Kebaso Gichana | Dupern Operations &amp; Analytics
-      </p>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; 2026 Peter Kebaso Gichana | Dupern Operations &amp; Analytics
+        </p>
+      </div>
     </footer>
   </body>
 </html>

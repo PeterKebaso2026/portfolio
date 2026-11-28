@@ -88,17 +88,38 @@ a:focus-visible {
   gap: var(--space-sm) var(--space-md);
 }
 
-.site-nav a {
-  display: inline-block;
+.site-header {
+  background-color: #0f172a;
   color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--radius-sm);
 }
 
-.site-nav a:hover,
-.site-nav a:focus-visible {
+.site-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3, 0.75rem);
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4, 1rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.5rem 0.25rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: var(--radius-sm, 0.25rem);
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
   background-color: rgba(255, 255, 255, 0.14);
   color: #ffffff;
 }
@@ -357,4 +378,12 @@ body {
 .media__body {
   flex: 1;
   min-width: 0;
+}
+.hero-image {
+  width: 100%;
+  max-height: 28rem;
+  object-fit: cover;
+  object-position: 50% 20%;
+  display: block;
+  border-radius: var(--radius-md, 0.5rem);
 }
